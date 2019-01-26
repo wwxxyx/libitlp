@@ -63,6 +63,10 @@ The Doxygen documentation can be built using the `doxygen` tool in libitlp's roo
 cmake -DDECRYPT_KEY="ABCDEF1234567890" -DFORCE_OPENSSL=ON
 ```
 
+```
+cmake  -DCMAKE_INSTALL_PREFIX=. -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/include -DOPENSSL_LIBRARIES=/usr/local/opt/openssl/include/lib  -DBUILD_SHARED_LIBS=OFF -DFORCE_OPENSSL=ON ..
+```
+
 ## Legal
 
 Apple and iTunes are trademarks of Apple Inc., registered in the U.S. and other countries. libiltp is not affiliated with Apple Inc. in any way.
